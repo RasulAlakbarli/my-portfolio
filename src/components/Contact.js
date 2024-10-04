@@ -14,7 +14,7 @@ export default function Contact() {
         
         {/* Contact Me Button */}
         <motion.a 
-          href="mailto:jane.doe@example.com"
+          href="mailto:alakbarlirasul@gmail.com"
           className="inline-block bg-gray-800 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-900 transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
