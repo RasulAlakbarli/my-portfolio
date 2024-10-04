@@ -4,15 +4,20 @@ import { ArrowRight } from 'lucide-react';
 
 const projectData = [
   {
-    title: "Forest Segmentation from Satellite Imagery",
-    description: "Developed a Deep Learning-based Approach for Monitoring Deforestation. The project utilizes the U-Net model implemented in Keras to perform the segmentation task. After training the model, a validation accuracy of 98% was achieved.",
+    title: "Image Segmentation from Satellite Images",
+    description: "Developed a Deep Learning-based Approach for Monitoring Deforestation. Used models like U-Net, DeepLabV3, and ConvLSTMs",
     image: "/images/forest-seg.png?height=400&width=600"
   },
   {
     title: "Tennis Matches Predictions",
     description: "Built a Tennis Match Predictor from Scratch. From with Parsing the Data from Internet using BeautifulSoup4, Preprocessing it, to Training a XGBoost Model with 85% Accuracy.",
     image: "/images/tennis-pred.png?height=400&width=600"
-  }
+  },
+  {
+    title: "Sprite Generation using Diffusion Model",
+    description: "Trained a DDPM Model to Generate Video Game Sprites from Scratch Using PyTorch.",
+    image: "/images/sprite-gen.png?height=400&width=600"
+  },
 ];
 
 export default function Projects() {
