@@ -10,7 +10,7 @@ const projectData = [
   },
   {
     title: "Tennis Matches Predictions",
-    description: "Built a Tennis Match Predictor from Scratch. From with Parsing the Data from Internet using BeautifulSoup4, Preprocessing it, to Training a XGBoost Model with 85% Accuracy.",
+    description: "Built a Tennis Match Predictor from Scratch. Starting with Parsing the Data from Internet using BeautifulSoup4, Preprocessing it, to Training a XGBoost Model with 85% Accuracy.",
     image: "/images/tennis-pred.png?height=400&width=600"
   },
   {
