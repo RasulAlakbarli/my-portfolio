@@ -44,18 +44,23 @@ export default function Timeline() {
         {timelineData.map((item, index) => (
           <motion.div
             key={item.date}
-            className={`relative mb-12 flex justify-between items-center w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} md:w-[calc(50%-2rem)] mx-auto`}
+            className={`relative mb-12 flex justify-between items-center w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} md:w-[calc(65%-2rem)] lg:w-[calc(50%-2rem)] mx-auto`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             {/* Date marker */}
-            <div className="bg-white p-2 rounded-full border border-gray-200 shadow-sm text-sm font-medium text-gray-600 absolute md:static left-1/2 transform -translate-x-1/2">
-              {item.date}
-            </div>
-
+            {index % 2 == 0 ?
+              <div className="whitespace-nowrap bg-white p-2 rounded-full border border-gray-200 shadow-sm text-sm font-medium text-gray-600 absolute bottom-1.5 right-2 md:static transform  lg:-translate-x-4/5">
+                {item.date}
+              </div>
+              :
+              <div className="whitespace-nowrap bg-white p-2 rounded-full border border-gray-200 shadow-sm text-sm font-medium text-gray-600 absolute bottom-1.5 right-2 md:static transform lg:translate-x-4/5">
+                {item.date}
+              </div>
+            }
             {/* Timeline content */}
-            <div className={`bg-white p-6 rounded-lg shadow-md w-full md:w-96 ${index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'}`}>
+            <div className={`bg-white p-12 md:p-6 rounded-lg shadow-md w-full md:w-96 ${index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'}`}>
               <h3 className="text-xl font-semibold mb-2 text-gray-800">{item.title}</h3>
               <p className="text-gray-600 mb-2">{item.description}</p>
               <p className="text-sm text-gray-500">{item.details}</p>

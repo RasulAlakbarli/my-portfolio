@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="mb-24">
       <motion.h1 
-        className="text-6xl font-bold mb-6 text-center text-gray-800"
+        className="text-[2.75rem] sm:text-6xl font-bold mb-6 text-center text-gray-800"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
